@@ -1,14 +1,22 @@
 .App {
   display: flex;
   flex-direction: column;
+}
+
+.contentblock{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.listBlock{
+  margin: 32px;
 }
 
 .title {
   color: #1b318e;
   font-weight: 500;
-  text-align: center;
   margin-bottom: 42px;
   margin-top: 42px;
 
@@ -25,12 +33,21 @@
   padding: 0;
   top: 18px;
   background-color: white;
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
 .listyle{
-  margin: 8px;
-  padding-bottom: 8px;
+  display: grid;
+  padding-left: 16px;
+  padding-bottom: 6px;
+  padding-top: 4px;
   border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.listyle:hover{
+  background-color: lightgray;
 }
 
 .textStyle{
@@ -41,6 +58,7 @@
 .row{
   display: flex;
   align-items: center;
+  padding-bottom: 12px;
 }
 
 .inputFiledStyle{
@@ -55,6 +73,7 @@
 
 .textField{
   height: 30px;
+  width: 234px;
   border: 1px solid #1C69F2;
   border-radius: 8px;
   font-size: 20px;
@@ -80,4 +99,61 @@
   font-weight: 600;
   cursor: pointer;
 
+}
+
+.triggerliststyle{
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  height: 48px;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.listitemFirst{
+  display: flex;
+  flex: 1.5;
+  font-size: large;
+  font-weight: 500;
+  color: darkslategrey;
+}
+
+.listitem{
+  display: flex;
+  flex: 1;
+  font-size: large;
+  font-weight: 500;
+  color: darkslategrey;
+}
+
+.listitemFirstrow{
+  font-size: large;
+  font-weight: 400;
+  color: #0045DB;
+}
+
+.moreicon{
+  visibility: visible;
+    padding: 6px;
+    width: 24px;
+    height: 6px;
+    border: 1px solid blue;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.listitemrow{
+  display: flex;
+  flex: 1;
+  font-size: large;
+  font-weight: 400;
+  color: darkslategrey;
+}
+
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  flex: 1.5 1;
+  align-items: center;
+  justify-content: space-between;
 }
